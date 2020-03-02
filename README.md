@@ -27,7 +27,7 @@ geofile = open(r"c:\temp\testhex.json", "w")<br />
 geofile.write(hexgrid.sendGeoJson())<br />
 geofile.close()<br />
 
-Open the file in your favorite viewer, like QGIS:<br />
+Open the file in your favorite viewer, like ArcGIS Pro, QGIS, etc.:<br />
 Here at 0.015 kilometers<br />
 ![Image](images/hexagonGridScreenShot15.png)<br />
 Here at 0.05 kilometers<br />

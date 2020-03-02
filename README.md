@@ -1,5 +1,5 @@
 # geojson-hexagon-grid-builder
-A simple class that generates a hexagon grid in longitude and latitude given a couple of basic parameters.  It applys the Haversine formula to adjust size of grid to the latitude it is required.  Note, it was intended to build a grid covering a finite geographic area, such as at the landownership level or within the proximity of the latitude selected.
+A simple class that generates a hexagon grid in longitude and latitude given a couple of basic parameters.  It applys the Haversine formula to adjust size of grid to the latitude it is required.  Note, it was intended to build a grid covering a finite geographic area, such as at the landownership level or within the proximity of the latitude selected. The GeoJson file that can be written out contains basic properties for each hexagon generated (e.g. the center point, call date, and a counter id).
 
 ## Parameters Required
 <ul>

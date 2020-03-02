@@ -30,7 +30,7 @@ class Hexbuild:
         self.center = [] # Stores center point of hexegon
         self._hexgridjson = {} # Stores Hexagon GeoJson
         
-        self._hexgrid = self._buildHexGrid() # Executes build build hexagon Json
+        self._hexgrid = self._buildHexGrid() # Executes build hexagon Json
         
         
         
@@ -155,7 +155,7 @@ class Hexbuild:
         return [[h1,h2,h3,h4,h5,h6,h1]] # Return hegagon geometry (closed polygon)
      
     """
-    Section required to calculate offsets and to generate hexigon geometry
+    Section required to calculate offsets and to generate hexagon geometry
     """
     
     def _deg2rad(self, angle):

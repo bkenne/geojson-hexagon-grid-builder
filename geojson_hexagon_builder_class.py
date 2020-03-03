@@ -152,7 +152,7 @@ class Hexbuild:
         h5 = self._pointRadialDistance(self.center[0],self.center[1],300,self.radius)
         h6 = self._pointRadialDistance(self.center[0],self.center[1],360,self.radius)
         
-        return [[h1,h2,h3,h4,h5,h6,h1]] # Return hegagon geometry (closed polygon)
+        return [[h1,h2,h3,h4,h5,h6,h1]] # Return hexagon geometry (closed polygon)
      
     """
     Section required to calculate offsets and to generate hexagon geometry

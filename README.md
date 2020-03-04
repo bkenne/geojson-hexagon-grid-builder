@@ -24,7 +24,7 @@ hexgrid = Hexbuild([-96.8211773, 32.9655743, -96.8190795, 32.9672722], 0.015, "k
 
 Write the results out to a file for use:<br />
 geofile = open(r"c:\temp\testhex.json", "w")<br />
-geofile.write(hexgrid.sendGeoJson())<br />
+geofile.write(hexgrid.sendGeoJsonText())<br />
 geofile.close()<br />
 
 Open the file in your favorite viewer, like ArcGIS Pro, QGIS, etc.:<br />

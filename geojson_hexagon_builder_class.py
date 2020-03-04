@@ -72,7 +72,7 @@ class Hexbuild:
                         
             # Generate hexagon
             self.center.append(self.boundaries[0]) # Position of first Hexagon(X)
-            self.center.append(self.boundaries[1]) # Position of first Hexagon(Y)
+            self.center.append(self.boundaries[3]) # Position of first Hexagon(Y)
             
             # Set required variables
             direction = "right"
@@ -152,7 +152,7 @@ class Hexbuild:
         h5 = self._pointRadialDistance(self.center[0],self.center[1],300,self.radius)
         h6 = self._pointRadialDistance(self.center[0],self.center[1],360,self.radius)
         
-        return [[h1,h2,h3,h4,h5,h6,h1]] # Return hexagon geometry (closed polygon)
+        return [[h1,h2,h3,h4,h5,h6,h1]] # Return hegagon geometry (closed polygon)
      
     """
     Section required to calculate offsets and to generate hexagon geometry
@@ -234,6 +234,10 @@ class Hexbuild:
     """
     Output Section
     """
-    # Return GeoJson Results on request
-    def sendGeoJson(self):
+    # Return GeoJson Results on request as Text
+    def sendGeoJsonText(self):
         return json.dumps(self._hexgridjson)
+    
+    # Return GeoJson Results on request as Dictionary
+    def sendGeoJsonDictionary(self):
+        return self._hexgridjson

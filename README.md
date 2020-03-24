@@ -9,7 +9,7 @@ A simple class that generates a hexagon grid in longitude and latitude given a c
 </ul>
 
 # Installation
-Simily add the attached python file to your work.
+Simply add the attached python file to your work.
 
 # Requirements
 <ul>
